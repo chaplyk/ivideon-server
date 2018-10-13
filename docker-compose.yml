@@ -1,11 +1,11 @@
-version: 3
+version: '3.2'
 services:
     ivideon-server:
+ #       build: .
         volumes:
             - '/home/bohdan/docker/ivideon-server/archive:/root/.IvideonServer/archive'
             - '/home/bohdan/docker/ivideon-server/videoserverd.config:/root/.IvideonServer/videoserverd.config'
-        restart: always
         ports:
-            - '6080:6080'
+            - '5955:5900'
         container_name: ivideon-server
         image: ivideon-server
