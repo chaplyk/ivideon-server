@@ -4,7 +4,7 @@ MAINTAINER Bohdan Chaplyk
 
 ENV DEBIAN_FRONTEND noninteractive
 
-COPY videoserverd.config /root/.IvideonServer/videoserverd.config
+#COPY videoserverd.config /root/.IvideonServer/videoserverd.config
 
 RUN \
   apt-get update && \
