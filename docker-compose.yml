@@ -7,5 +7,6 @@ services:
             - '/home/bohdan/docker/ivideon-server/videoserverd.config:/root/.IvideonServer/videoserverd.config'
         ports:
             - '5955:5900'
+            - '6666:6666'
         container_name: ivideon-server
         image: ivideon-server
